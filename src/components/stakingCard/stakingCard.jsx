@@ -313,7 +313,7 @@ function StakingCardPure({ api, APY }) {
               <div className={styles.cardStakingItemHead}>
                 <div className={styles.cardStakingItemInfo}>
                   <div className={styles.cardStakingItemInfoBlock}>
-                    <div className={styles.cardLabel}>DAI Staked</div>
+                    <div className={styles.cardLabel}>wETH Staked</div>
                     <div className={styles.cardInfoText}>{stakedAmount}</div>
                   </div>
                   {/* <div className={styles.cardStakingItemInfoBlock}>
@@ -382,7 +382,7 @@ function StakingCardPure({ api, APY }) {
       >
         <div className={styles.stakeModal}>
           <Title className={styles.stakeModalTitle} level={3}>
-            Stake DAI
+            Stake wETH
           </Title>
           <div className={styles.stakeModalInputContainer}>
             <Input
@@ -426,12 +426,12 @@ function StakingCardPure({ api, APY }) {
         )}
         <div className={styles.cardHead}>
           <div className={styles.cardHeadLogo}>
-            <img src={DAO1Logo} alt="DAI" />
+            <img src={DAO1Logo} alt="wETH" />
           </div>
           <div className={styles.cardName}>
             <span className={styles.cardLabel}>STAKING POOL</span>
             <span className={styles.cardNameText}>
-              DAI
+            wETH
             </span>
           </div>
         </div>
@@ -451,10 +451,7 @@ function StakingCardPure({ api, APY }) {
             <div className={styles.cardLabel}>Staking/unstaking FEE</div>
             <div className={styles.cardInfoText}>0.5%</div>
           </div>
-          <div className={styles.cardStakingConditionsItem}>
-            <div className={styles.cardLabel}>Early unstaking FEE</div>
-            <div className={styles.cardInfoText}>15%</div>
-          </div>
+          
         </div>
 
         <div className={styles.cardStakingList}>
@@ -472,7 +469,7 @@ function StakingCardPure({ api, APY }) {
         <div className={styles.cardFooter}>
           <div className={styles.cardTatalStaked}>
             <div className={styles.cardLabel}>Total Staked:</div>
-            <div className={styles.cardTatalStakedValue}>{totalStaked} DAI</div>
+            <div className={styles.cardTatalStakedValue}>{totalStaked} wETH</div>
           </div>
           <Button
             onClick={() => setIsStakeModalOpen(true)}
